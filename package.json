@@ -1,0 +1,28 @@
+{
+  "name": "@mimic-fi/mimic-7702-upgrade",
+  "description": "Mimic 7702 upgrade helpers",
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "mimic-eip7702": "dist/index.js"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "upgrade": "ts-node src/upgrade.ts",
+    "status": "ts-node src/status.ts",
+    "test": "echo 'No tests'"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "ethers": "^6.13.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "eslint-config-mimic": "^0.0.3",
+    "eslint": "^9.10.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
