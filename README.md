@@ -76,7 +76,7 @@ Fill in the following variables:
 ### Upgrade your EOA
 
 ```bash
-yarn upgrade
+yarn upgrade-eip7702
 ```
 
 This sends a zero-value self-transaction containing an EIP-7702 authorization that upgrades the EOA to a Mimic smart account.
