@@ -17,7 +17,7 @@ export async function status(): Promise<void> {
   const wallet = new ethers.Wallet(PRIVATE_KEY, provider)
 
   const bytecode = await provider.getCode(wallet.address)
-  if (bytecode === '0x') console.log(`❌ Wallet ${wallet.address} is not upgraded top a 7702 smart account`)
+  if (bytecode === '0x') console.log(`❌ Wallet ${wallet.address} is not upgraded to a 7702 smart account`)
   else if (!bytecode.startsWith('0xef0100')) console.log(`❌ ${wallet.address} is not an EOA`)
   else {
     const [, implementation] = bytecode.split('0xef0100')
