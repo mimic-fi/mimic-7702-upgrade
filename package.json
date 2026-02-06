@@ -9,7 +9,7 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "upgrade-eip7702": "tsx src/upgrade.ts",
+    "upgrade-7702": "tsx src/upgrade.ts",
     "status": "tsx src/status.ts",
     "test": "echo 'No tests'"
   },
