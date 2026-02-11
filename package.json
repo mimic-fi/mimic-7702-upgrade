@@ -10,6 +10,7 @@
   "scripts": {
     "lint": "eslint .",
     "upgrade-7702": "tsx src/upgrade.ts",
+    "downgrade-7702": "tsx src/downgrade.ts",
     "status": "tsx src/status.ts",
     "test": "echo 'No tests'"
   },

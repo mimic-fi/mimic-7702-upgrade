@@ -89,6 +89,14 @@ yarn status
 
 This prints basic wallet and network information and provides helpful explorer links for manual verification.
 
+### Rollback your EOA upgrade
+
+```bash
+yarn downgrade-7702
+```
+
+This sends a zero-value self-transaction containing an EIP-7702 authorization that rolls back you EOA to its original status.
+
 ## License
 
 MIT
